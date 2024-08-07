@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="line w-20 h-1 bg-[#2c3e50]"></div>
         </div>
 
-        <div className="form w-1/2 mx-auto mt-14">
+        <div className="form w-2/3 md:w-1/2 mx-auto mt-14">
           <div className="mb-8 relative">
             <label
               htmlFor="name"

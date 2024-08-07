@@ -36,16 +36,37 @@ export default function Navbar() {
 
         <ul
           className={`md:flex flex-col items-start mt-5 md:mt-0 w-full md:gap-10 md:flex-row md:w-auto  gap-4 text-lg 
-            ${show ? "flex" : "hidden"}`}
+            ${show ? "flex" : "hidden"} transition-all duration-500`}
         >
           <li>
-            <NavLink to={"about"}>ABOUT</NavLink>
+            <NavLink
+              onClick={() => {
+                setShow(false);
+              }}
+              to={"about"}
+            >
+              ABOUT
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"portfolio"}>PORTFOLIO</NavLink>
+            <NavLink
+              onClick={() => {
+                setShow(false);
+              }}
+              to={"portfolio"}
+            >
+              PORTFOLIO
+            </NavLink>
           </li>
           <li>
-            <NavLink to={"contact"}>CONTACT</NavLink>
+            <NavLink
+              onClick={() => {
+                setShow(false);
+              }}
+              to={"contact"}
+            >
+              CONTACT
+            </NavLink>
           </li>
         </ul>
       </div>

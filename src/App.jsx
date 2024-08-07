@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import LayOut from "./components/LayOut/LayOut";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   const routes = createBrowserRouter([
@@ -14,10 +15,11 @@ function App() {
       path: "",
       element: <LayOut />,
       children: [
-        { path: "", element: <Hero /> },
+        { index: true, element: <Hero /> },
         { path: "about", element: <About /> },
         { path: "portfolio", element: <Portfolio /> },
         { path: "contact", element: <Contact /> },
+        { path: "/*", element: <NotFound /> },
       ],
     },
   ]);
