@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* portfolio section */
+.overlay {
+  @apply absolute top-0 left-0 w-full h-full bg-[#1abc9ce6] flex justify-center items-center opacity-0 duration-500 group-hover:opacity-85;
+}
+
+/* contact section */
+.input-setting {
+  @apply w-full px-4 py-2 border-0 border-b-2 border-b-[#dee2e6] focus:border-b-[#dee2e6] focus:ring-0 rounded-lg  placeholder:text-gray-500;
+}
+.label-setting {
+  @apply block ms-3 text-left text-[#1abc9c] relative duration-500  font-semibold mb-2;
+}
+
+/* navbar active  */
+.active {
+  @apply bg-[#1abc9c] px-3 py-2 rounded-md text-white transition duration-500;
+}
