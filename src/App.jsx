@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
